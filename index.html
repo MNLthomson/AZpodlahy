@@ -1,37 +1,187 @@
 <!DOCTYPE html>
-<html lang="cz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AZ Pohlahářství</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>AZ Pohlahářství</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">O nás</a></li>
-          <li><a href="#services">Služby</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AZ Podlahy</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Vlastní úpravy podle návrhu */
+    .navbar {
+      padding: 1rem 0;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: #333;
+      margin: 0 0.5rem;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #009246;
+    }
+    .search-input {
+      max-width: 200px;
+    }
+    .btn-cta {
+      background-color: #dc3545; /* červená */
+      color: white;
+      font-weight: bold;
+    }
+    .btn-cta:hover {
+      background-color: #bb2d3b;
+      color: white;
+    }
+    .hero {
+      background: url('banner.jpg') center/cover no-repeat;
+      border-radius: 15px;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .service-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #009246; /* zelená podle loga */
+      color: white;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
 
-    <section id="about">
-      <h2>O nás</h2>
-      <p>Vítejte v AZ Pohlahářství, kde se staráme o vaše mazlíčky s láskou a péčí.</p>
-    </section>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="AZ Podlahy" height="40">
+        </a>
 
-    <section id="services">
-      <h2>Služby</h2>
-      <ul>
-        <li>Stříhání a úprava srsti</li>
-        <li>Koupání a hygiena</li>
-        <li>Poradenství ohledně péče o zvířata</li>
-      </ul>
-    </section>
+        <!-- Navigace -->
+        <div class="collapse navbar-collapse d-flex justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">O nás</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Služby</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Podlahy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reference</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+          </ul>
+        </div>
 
-  </body>
+        <!-- Vyhledávání + CTA -->
+        <div class="d-flex align-items-center">
+          <input type="text" class="form-control search-input me-3" placeholder="Hledat">
+          <a href="tel:+420727030130" class="btn btn-cta">Zavolejte: +420 727 030 130</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="container my-4">
+    <div class="hero">
+      <div>
+        <h1 class="display-5 fw-bold">AZ Podlahy</h1>
+        <p class="lead">Podlahy, které vydrží, a služby, na které se můžete spolehnout.</p>
+        <a href="#onas" class="btn btn-danger btn-lg">Zjistit více</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O nás -->
+  <section id="onas" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>O nás</h2>
+        <p>
+          V A–Z Podlahářství se již 28 let specializujeme na prodej a profesionální pokládku podlah,
+          podlahových krytin a teras. Naše služby poskytujeme jak rodinám, tak i firmám. Jsme pyšní,
+          že nabízíme kvalitní materiály a odbornou práci, díky čemuž se můžete spolehnout na výsledný
+          interiér, který bude nejen krásný, ale i funkční a odolný.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="onas.jpg" alt="O nás" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Typy služeb -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Typy služeb</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="sluzba1.jpg" alt="Pokládka" class="service-icon">
+        <h5>Pokládka podlah a koberců</h5>
+        <p>Profesionální pokládka všech typů podlahových krytin, koberců a PVC.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="sluzba2.jpg" alt="Broušení" class="service-icon">
+        <h5>Broušení dřevěných podlah</h5>
+        <p>Renovace a broušení parket a masivních dřevěných podlah.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="sluzba3.jpg" alt="Renovace" class="service-icon">
+        <h5>Renovace dřevěných teras</h5>
+        <p>Údržba a obnova dřevěných venkovních teras, olejování a ochranné nátěry.</p>
+      </div>
+    </div>
+    <a href="sluzby.html" class="btn btn-success mt-4">Zobrazit více</a>
+  </section>
+
+  <!-- Partneři -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Partneři</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-3"><img src="partner1.png" class="img-fluid" alt="Partner 1"></div>
+      <div class="col-6 col-md-3"><img src="partner2.png" class="img-fluid" alt="Partner 2"></div>
+      <div class="col-6 col-md-3"><img src="partner3.png" class="img-fluid" alt="Partner 3"></div>
+      <div class="col-6 col-md-3"><img src="partner4.png" class="img-fluid" alt="Partner 4"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Služby</a></li>
+            <li><a href="#">Podlahy</a></li>
+            <li><a href="#">Reference</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <p>Tel: 727 030 130</p>
+          <p>Email: azpodlahy@centrum.cz</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <p>&copy; 2025 AZ Podlahářství</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
