@@ -1,0 +1,139 @@
+/* Sekce banner */
+#banner {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background-image: url('/images/banner1.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 1400px;
+  height: 800px;
+  margin: 10px auto 80px auto;
+}
+
+/* Overlay pro ztmavení pozadí */
+#banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* tmavý filtr */
+}
+
+/* Obsah banneru */
+.banner-content {
+  top: -10px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Logo */
+.banner-logo {
+  max-width: 610px;
+  width: 100%;
+}
+
+/* Text */
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 70px;
+  margin-top: -20px;
+}
+
+/* Tlačítko */
+.banner-btn {
+  background-color: #e60000;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #cc0000;
+}
+
+
+/* sekce about */
+#about {
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 80px auto;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.left-about {
+  text-align: left;
+  justify-content: center;
+  width: 700px;
+  height: 320px;
+  margin-top: 40px;
+}
+
+.left-about h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgba(19, 125, 44, 1)
+}
+
+.left-about p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.right-about img {
+  width: 100%;
+  width: 480px;
+  height: auto;
+
+}
+
+/* Sekce typy služeb */
+#typy-sluzeb {
+  max-width: 100%;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+}
+
+#typy-sluzeb h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+  width: 125px;
+  height: auto;
+}

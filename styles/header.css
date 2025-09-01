@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Obecný header */
+header {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* mezera mezi logem a navigací */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* mezera mezi vyhledáváním a tlačítkem */
+}
+
+/* Logo */
+.header-logo img {
+  height: 85px; 
+  width: auto;
+}
+
+/* Navigace */
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+  color: #c00;
+}
+
+/* Vyhledávání */
+.header-search {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 5px 10px;
+  height: 50px;
+}
+
+.header-search input[type="text"] {
+  border: none;
+  background-color: rgba(217, 217, 217, 1);
+  outline: none;
+  font-size: 14px;
+  height: 50px;
+  width: 245px;
+  padding-left: 15px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.header-search .search-btn {
+  border: none;
+  background-color: rgba(239, 239, 239, 1);
+  cursor: pointer;
+  width: 57px;
+  height: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.header-search .search-btn img {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+/* Call-to-Action tlačítko */
+.call-button {
+  display: inline-block;
+  background-color: #e60000;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #cc0000;
+}

@@ -1,37 +1,136 @@
 <!DOCTYPE html>
 <html lang="cz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AZ Pohlahářství</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <img src="images/az-podlahy-logo.png" alt="AZ Pohlahářství Logo"/>
-      <nav>
-        <ul>
-          <li><a href="#about">O nás</a></li>
-          <li><a href="#services">Služby</a></li>
-          <li><a href="#podlahy">Podlahy</a></li>
-          <li><a href="#reference">Reference</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ Pohlahářství</title>
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- levá část -->
+    <div class="header-left">
+      <div class="header-logo">
+        <img src="images/az-podlahy-logo.png" alt="AZ Podlahářství Logo" />
+      </div>
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#podlahy">Podlahy</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- pravá část -->
+    <div class="header-right">
+      <div class="header-search">
+        <input type="text" placeholder="Hledat..." />
+        <button class="search-btn">
+          <img src="images/search-icon.png" alt="Search Icon" />
+        </button>
+      </div>
+      <div class="header-call">
+        <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
     <section id="banner">
-      <img src="images/az-podlahy-logo.png" alt="AZ Pohlahářství Logo"/>
-      <p>Podlahy, které vydrží, a služby, na které se můžete spolehnout</p>
-      <button>Zjistit více</button>
+      <div class="banner-content">
+        <img src="images/az-podlahy-logo.png" alt="AZ Podlahářství Logo" class="banner-logo" />
+        <p>Podlahy, které vydrží, a služby, na které se můžete spolehnout</p>
+        <button class="banner-btn">Zjistit více</button>
+      </div>
     </section>
 
     <section id="about">
-      <h2>O nás</h2>
-      <p>V A-Z Podlahářství se již 28 let specializujeme na prodej a profesionální pokládku podlahových krytin. Naše služby poskytujeme na klíč, což znamená, že se o vše postaráme od prvotní konzultace až po finální dokončení. Ať už zařizujete byt, nebo stavíte rodinný dům, pomůžeme vám vybrat ideální řešení, které bude nejen krásné, ale i funkční a odolné.</p>
-      
+      <div class="left-about">
+        <h2>O nás</h2>
+        <p>V A-Z Podlahářství se již 28 let specializujeme na prodej a profesionální pokládku podlahových krytin. Naše
+          služby poskytujeme na klíč, což znamená, že se o vše postaráme od prvotní konzultace až po finální dokončení.
+          Ať
+          už zařizujete byt, nebo stavíte rodinný dům, pomůžeme vám vybrat ideální řešení, které bude nejen krásné, ale
+          i
+          funkční a odolné.</p>
+      </div>
+      <div class="right-about">
+        <img src="images/az-pobocka.png" alt="AZ Pohlahářství Pobočka" />
+      </div>
     </section>
 
-  </body>
+    <section id="typy-sluzeb">
+      <h1>Typy služeb</h1>
+      <div class="services-grid">
+        <div class="service">
+          <img src="images/pokladka-podlah-kobercu.png" alt="Pokládka podlah a koberců" />
+          <h3>Pokládka podlah a koberců</h3>
+          <p>Zajistíme profesionální a precizní pokládku všech typů podlahových krytin. Ať už si vyberete elegantní
+            dřevo,
+            praktický vinyl, moderní laminát, nebo útulný koberec, garantujeme, že výsledek bude dokonalý. Naše
+            dlouholeté
+            zkušenosti jsou zárukou kvality a spolehlivosti.</p>
+        </div>
+
+        <div class="service">
+          <img src="images/brouseni-drevenych-podlah.png" alt="Broušení dřevěných podlah" />
+          <h3>Broušení dřevěných podlah</h3>
+          <p>Vraťte svým starým dřevěným podlahám původní krásu. Pomocí moderní techniky a špičkových brusných materiálů
+            dokážeme odstranit škrábance, nerovnosti a zašlý lak. Výsledkem je podlaha, která vypadá jako nová a opět
+            rozzáří váš interiér.</p>
+        </div>
+
+        <div class="service">
+          <img src="images/renovace-teras.png" alt="Renovace dřevěných teras" />
+          <h3>Renovace dřevěných teras</h3>
+          <p>Vaše terasa si zaslouží druhou šanci. Provádíme kompletní renovace dřevěných teras, které zahrnují
+            broušení,
+            hloubkové čištění a olejování. Tím chráníme dřevo před vlivy počasí a navracíme mu jeho přirozenou barvu a
+            strukturu.</p>
+        </div>
+      </div>
+
+
+      <button>Zobrazit více</button>
+    </section>
+
+    <section id="partners">
+      <h2>Partneři</h2>
+      <div class="partner-logos">
+        <img src="images/meister-thumbnail.jpg" alt="Meister Logo" />
+        <img src="images/egger-thmbnail.jpg" alt="Egger Logo" />
+        <img src="images/quick-step-thumbnail.png" alt="QuickStep Logo" />
+        <img src="images/svartes-thumbnail.png" alt="Svartes Logo" />
+    </section>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="#about">O nás</a>
+        <a href="#services">Služby</a>
+        <a href="#podlahy">Podlahy</a>
+        <a href="#reference">Reference</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="tel:+420123456789">Telefon: +420 737 003 130</a>
+        <a href="mailto:azpodlahy@centrum.cz">Email: azpodlahy@centrum.cz</a>
+      </div>
+    </footer>
+  </main>
+
+
+</body>
+
 </html>
