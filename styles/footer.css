@@ -1,0 +1,55 @@
+/* Sekce Footer */
+footer {
+  height: 180px;
+  background-color: rgba(26, 154, 56, 1);
+  color: black;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-nav a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 15px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.footer-nav a:hover {
+  color: #e0e0e0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.footer-contact a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-contact a:hover {
+  color: #e0e0e0;
+}
+
+.footer-register {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  bottom: 0;
+}

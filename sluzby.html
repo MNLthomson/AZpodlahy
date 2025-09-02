@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Služby - AZ Pohlahářství</title>
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/sluzby.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- levá část -->
+    <div class="header-left">
+      <div class="header-logo">
+        <img src="images/az-podlahy-logo.png" alt="AZ Podlahářství Logo" />
+      </div>
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#podlahy">Podlahy</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- pravá část -->
+    <div class="header-right">
+      <div class="header-search">
+        <input type="text" placeholder="Hledat..." />
+        <button class="search-btn">
+          <img src="images/search-icon.png" alt="Search Icon" />
+        </button>
+      </div>
+      <div class="header-call">
+        <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
+      </div>
+    </div>
+
+  </header>
+  <section id="services-nav">
+    <div class="service-title">
+      <h2>Služby</h2>
+    </div>
+    <div class="service-grid">
+      <button class="service-button"
+      onclick="showService('podlahy')">
+        <img src="images/pokladka-podlah-ctverec.png" alt="Pokládka podlah" />
+        <span>Pokládka podlah všech typů</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('koberce')">
+        <img src="images/pokladka-kobercu.jpg" alt="Pokládka koberců" />
+        <span>Pokládka koberců</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('pvc')">
+        <img src="images/pokladka-pvc.jpg" alt="Pokládka PVC" />
+        <span>Pokládka PVC</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('marmoleum')">
+        <img src="images/pokladka-marmolea.jpg" alt="Pokládka marmolea" />
+        <span>Pokládka marmolea</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('brouseni')">
+        <img src="images/brouseni-drevenych-podlah-sluzby.png" alt="Broušení dřevěných podlah" />
+        <span>Broušení dřevěných podlah</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('cisteni')">
+        <img src="images/cisteni-drevenych-podlah-edited.png.png" alt="Čištění dřevěných podlah" />
+        <span>Čištění dřevěných podlah</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('renovace')">
+        <img src="images/renovace-drevenych-teras.jpeg" alt="Renovace dřevěných teras" />
+        <span>Renovace dřevěných teras</span>
+      </button>
+      <button class="service-button"
+      onclick="showService('udrzba')">
+        <img src="images/udrzba-podlah.jpg" alt="Údržba podlah Návody" />
+        <span>Údržba podlah Návody</span>
+      </button>
+      
+    </div>
+  </section>
+
+  <main>
+    
+  </main>
+  <footer>
+      <div class="footer-grid">
+        <div class="footer-nav">
+          <a href="#about">O nás</a>
+          <a href="#services">Služby</a>
+          <a href="#podlahy">Podlahy</a>
+          <a href="#reference">Reference</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+
+        <div class="footer-contact">
+          <a href="tel:+420123456789">Telefon: +420 737 003 130</a>
+          <a href="mailto:azpodlahy@centrum.cz">Email: azpodlahy@centrum.cz</a>
+        </div>
+      </div>
+      
+      <div class="footer-register">
+        <p>© 2025 AZ-PODLAHÁŘSTVÍ</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>

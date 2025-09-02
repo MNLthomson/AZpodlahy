@@ -1,0 +1,48 @@
+/* Sekce služby navigace */
+.service-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 tlačítka v řádku */
+  gap: 30px; /* mezery mezi tlačítky */
+  max-width: 1000px;
+  margin: 20px auto; /* vycentrování na stránce */
+  margin-top: 0;
+  padding: 10px;
+}
+
+.service-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.service-button img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.service-button span {
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.service-button:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
