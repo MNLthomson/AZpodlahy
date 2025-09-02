@@ -96,7 +96,10 @@
   </section>
 
   <main>
-    
+    <div class="content" id="serviceContent">
+
+    </div>
+      
   </main>
   <footer>
       <div class="footer-grid">
@@ -119,6 +122,56 @@
       </div>
     </footer>
 
+    <!-- Javascript -->
+    <script>
+    // Data pro každou službu
+    const services = {
+      vinyl: {
+        title: "Pokládka vinylu",
+        text1: "Vinylové podlahy jsou moderní a odolné řešení...",
+        text2: "Jsou vhodné do domácností i komerčních prostor...",
+        imageBefore: "before-vinyl.jpg",
+        imageAfter: "after-vinyl.jpg"
+      },
+      parkety: {
+        title: "Renovace parket",
+        text1: "Renovace vrátí parketám jejich původní krásu...",
+        text2: "Provádíme broušení, tmelení a nový lak...",
+        imageBefore: "before-parkety.jpg",
+        imageAfter: "after-parkety.jpg"
+      },
+      laminat: {
+        title: "Pokládka laminátu",
+        text1: "Laminát je cenově dostupný a odolný materiál...",
+        text2: "Je ideální pro rychlou renovaci interiéru...",
+        imageBefore: "before-laminat.jpg",
+        imageAfter: "after-laminat.jpg"
+      },
+      // ... a takhle můžeš doplnit zbytek služeb
+    };
+
+    // Funkce pro zobrazení obsahu
+    function showService(serviceKey) {
+      const service = services[serviceKey];
+      const contentDiv = document.getElementById("serviceContent");
+
+      contentDiv.innerHTML = `
+        <div class="left">
+          <h2>${service.title}</h2>
+          <p>${service.text1}</p>
+          <p>${service.text2}</p>
+        </div>
+        <div class="right">
+          <h3>Realizace</h3>
+          <img src="${service.imageBefore}" alt="Před realizací">
+          <img src="${service.imageAfter}" alt="Po realizaci">
+        </div>
+      `;
+    }
+
+    // Načti defaultně první službu
+    showService('vinyl');
+  </script>
 </body>
 
 </html>
