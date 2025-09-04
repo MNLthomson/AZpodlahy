@@ -3,6 +3,7 @@ footer {
   height: 180px;
   background-color: rgba(26, 154, 56, 1);
   color: black;
+  bottom: 0;
 }
 .footer-grid {
   display: flex;
@@ -51,5 +52,5 @@ footer {
   color: white;
   font-weight: 600;
   font-size: 14px;
-  bottom: 0;
+  margin-bottom: 10px;
 }

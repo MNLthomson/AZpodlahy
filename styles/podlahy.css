@@ -13,13 +13,14 @@ main {
   flex-grow: 1;
 }
 
-/* Sekce služby navigace */
-.service-title {
+/* Sekce podlahy navigace */
+.product-title {
   text-align: center;
   font-size: 30px;
 }
 
-.service-grid {
+
+.product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 tlačítka v řádku */
   gap: 30px; /* mezery mezi tlačítky */
@@ -29,7 +30,7 @@ main {
   padding: 10px;
 }
 
-.service-button {
+.product-button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -43,13 +44,13 @@ main {
   transition: background 0.3s, transform 0.2s;
 }
 
-.service-button img {
+.product-button img {
   width: 50px;
   height: 50px;
   object-fit: contain;
 }
 
-.service-button span {
+.product-button span {
   flex-grow: 1;
   font-size: 14px;
   font-weight: 600;
@@ -57,7 +58,7 @@ main {
   padding: 5px 20px;
 }
 
-.service-button:hover {
+.product-button:hover {
   background: #e0e0e0;
   transform: translateY(-2px);
 }
@@ -97,37 +98,5 @@ main {
   text-align: center;
 }
 
-.right h3 {
-  font-size: 20px;
-  font-weight: 600;
-}
 
-.udrzba-content {
-  margin-left: 120px;
-}
 
-.udrzba-content h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.udrzba-content h3 {
-  margin-bottom: 5px;
-}
-
-.udrzba-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.udrzba-content ul {
-  padding-left: 20px;
-}
-
-.udrzba-content li {
-  font-size: 16px;
-  line-height: 1.4;
-  
-}
