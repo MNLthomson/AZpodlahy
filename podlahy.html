@@ -119,52 +119,84 @@
   <script>
     // Data pro každou službu
     const products = {
-      podlahy: {
-        title: "Pokládka podlah všech typů",
-        text1: "Rozhodujete se o nové podlaze a hledáte profesionální pokládku? Správně provedená instalace podlahové krytiny je zásadní pro dlouhou životnost, pohodlí a vzhled vašeho domova či kanceláře. Naši zkušení podlaháři přistupují ke každé zakázce individuálně, přizpůsobují práci konkrétním podmínkám a požadavkům zákazníka tak, aby výsledek předčil očekávání a podlaha byla nejen krásná, ale i funkční.",
-        text2: "Provádíme odbornou pokládku všech typů podlah – od PVC a vinylu, přes plovoucí laminátové podlahy, parkety, masivní dřevo, korek až po koberce či moderní kompozitní materiály. Zajišťujeme kompletní servis od přípravy podkladu, přes přesné vyrovnání a řezání až po finální úpravy a lištování. Všechny postupy volíme tak, aby byla zachována maximální kvalita a odolnost povrchu, a většina podlah je přizpůsobena i pro použití s podlahovým vytápěním.",
+      lamilat: {
+        title: "Laminátové plovoucí podlahy",
+        text1: "Laminátové podlahy jsou oblíbenou volbou díky své odolnosti, jednoduché pokládce a široké nabídce dekorů. Věrně imitují dřevo, kámen nebo dlažbu a jsou cenově dostupnější než přírodní materiály. Díky moderním technologiím mají velmi realistický vzhled a dlouhou životnost.",
+        titleVyhody: "Výhody laminátových podlah:",
+        vyhoda1: "Široká nabídka dekorů a barev.",
+        vyhoda2: "Vysoká odolnost proti poškrábání a opotřebení.",
+        vyhoda3: "Snadná údržba a jednoduchá instalace plovoucím způsobem.",
+        vyhoda4: "Výborný poměr cena / výkon.",
         imageProduct: "before-laminat.jpg"
       },
-      koberce: {
-        title: "Pokládka koberců",
-        text1: "Rozhodujete se, jak dodat svému interiéru útulnost a pohodlí? Koberce patří mezi nejčastěji volené podlahové krytiny právě díky své hřejivosti, komfortu a široké škále barev i vzorů. Správná pokládka koberce je však klíčová pro jeho dlouhou životnost a perfektní vzhled. Naši odborníci se vždy přizpůsobí konkrétním potřebám a požadavkům zákazníka, aby výsledek odpovídal nejvyšším standardům kvality i estetice.",
-        text2: "Nabízíme profesionální pokládku všech typů koberců – metrážových i kobercových čtverců, vhodných pro domácnosti, kanceláře, hotely či komerční prostory. Zajišťujeme kompletní servis od přípravy podkladu, lepení, napínání až po přesné začištění detailů. Díky našim zkušenostem je koberec položen rovnoměrně, bez vlnění a s vysokou odolností proti každodenní zátěži. Většinu koberců je možné kombinovat i s podlahovým vytápěním pro maximální komfort.",
+      vinyl: {
+        title: "Vinylové podlahy",
+        text1: "Vinylové podlahy nabízí krásné a exkluzivní vzory. Můžeme vybírat z mnoha vzorníků a barev. Vinylové podlahy věrně napodobují vzor dřeva, kamene, dlaždiček i korku. Díky technologii 3D embosování mají plastický vzhled a jsou odolné vůči vlhkosti i mechanickému zatížení.",
+        titleVyhody: "Výhody vinylových podlah:",
+        vyhoda1: "Nabízejí nepřeberné množství barev a moderní vzhled.",
+        vyhoda2: "Snadná údržba, pokládka a výměnitelnost dílců.",
+        vyhoda3: "Vhodné pro alergiky, mají tepelně izolační vlastnosti.",
+        vyhoda4: "Odolné i proti pádům předmětů.",
         imageProduct: "before-laminat.jpg"
       },
-      pvc: {
-        title: "Pokládka PVC",
-        text1: "Rozhodujete se o vaší nové podlaze? Vámi zvolená podlahová krytina, vás bude inspirovat k vytvoření lepšího životního prostředí vašeho domova. Proto ve všech činnostech naší práce se přizpůsobujeme potřebám a přáním každého zákazníka, aby výsledek naší společné práce byl nad očekávání a co nejvyšší možné kvalitě.",
-        text2: "Nabízíme široké spektrum podlahovin PVC s vysokou kvalitou od předních světových výrobců v rozmanitosti dřeva, parket, keramické dlažby až po technické a jednobarevné vzory. V naší nabídce najdete PVC heterogenní (složeno z několika vrstev) homogenní) v celé své tloušťce stejného složení i probarvení). Druhy PVC pro lehkou zátěž, určených pro domácnost, byty, rodinné domy až po silné zátěžové PVC , určené pro kanceláře, školy, komerční výstavbu i lehký průmysl. Většina podlahovin je technicky přizpůsobena pro použití na podlahové topení.",
+      drevo: {
+        title: "Dřevěné plovoucí podlahy",
+        text1: "Dřevěné podlahy přinášejí do interiéru přírodní krásu a jedinečný charakter. Každý kus dřeva má svou vlastní kresbu a barvu, což dodává interiéru exkluzivitu. Dřevo je přírodní materiál s dlouhou životností a možností renovace broušením.",
+        titleVyhody: "Výhody dřevěných podlah:",
+        vyhoda1: "Přirozený vzhled a originální struktura dřeva.",
+        vyhoda2: "Možnost opakované renovace.",
+        vyhoda3: "Dlouhá životnost při správné péči.",
+        vyhoda4: "Přírodní a ekologický materiál.",
+        imageProduct: "before-laminat.jpg"
+      },
+      korek: {
+        title: "Korkové plovoucí podlahy",
+        text1: "Korkové podlahy jsou vyrobeny z přírodního materiálu, který je příjemný na dotek a šetrný k životnímu prostředí. Korek má přirozené izolační vlastnosti a je velmi komfortní pro chůzi. Díky své pružnosti také tlumí hluk a chrání klouby.",
+        titleVyhody: "Výhody korkových podlah:",
+        vyhoda1: "Výborné tepelně a zvukově izolační vlastnosti.",
+        vyhoda2: "Přírodní, ekologický a recyklovatelný materiál.",
+        vyhoda3: "Měkký a příjemný povrch vhodný i pro chůzi naboso.",
+        vyhoda4: "Tlumí kročejový hluk a šetří klouby.",
         imageProduct: "before-laminat.jpg"
       },
       marmoleum: {
-        title: "Pokládka marmolea",
-        text1: "Rozhodujete se pro přírodní a ekologické řešení podlahy? Marmoleum je vysoce odolná krytina z přírodních surovin, která spojuje dlouhou životnost, snadnou údržbu a moderní vzhled. Aby plně vynikly jeho vlastnosti, je nezbytná odborná pokládka. Naši profesionálové dbají na precizní zpracování a vždy se přizpůsobují potřebám zákazníka i charakteru interiéru, aby výsledek působil elegantně a trvale.",
-        text2: "Provádíme odbornou pokládku marmolea v rolích i dílcích, a to do domácností, kanceláří, škol i komerčních prostor. Zajišťujeme kompletní servis od přípravy a vyrovnání podkladu, přes přesné lepení až po detailní zakončení hran a lišt. Marmoleum je navíc vhodné i pro podlahové vytápění a díky naší profesionální instalaci získáte podlahu s vysokou odolností a dlouhou životností.",
+        title: "Marmoleum - Přírodní linoleum",
+        text1: "Marmoleum je přírodní podlaha vyrobená z obnovitelných surovin, jako je lněný olej, juta a pryskyřice. Je ekologická, zdravotně nezávadná a zároveň velmi odolná. Skvěle se hodí do domácností i veřejných prostor díky své trvanlivosti a antistatickým vlastnostem.",
+        titleVyhody: "Výhody marmolea:",
+        vyhoda1: "100% přírodní a ekologická podlaha.",
+        vyhoda2: "Velmi dlouhá životnost a vysoká odolnost.",
+        vyhoda3: "Antistatické a antibakteriální vlastnosti.",
+        vyhoda4: "Snadná údržba a moderní design.",
         imageProduct: "before-laminat.jpg"
       },
-      brouseni: {
-        title: "Broušení dřevěných podlah",
-        text1: "Máte dřevěnou podlahu, která ztratila svůj původní vzhled? Profesionální broušení je první krok k její obnově a navrácení přirozené krásy dřeva. Naši odborníci využívají moderní technologii, která zaručí rovnoměrné zbroušení povrchu bez poškození a s minimálním prašným zatížením. Každou zakázku přizpůsobujeme konkrétnímu typu dřeva i míře opotřebení.",
-        text2: "Nabízíme kompletní broušení všech typů dřevěných podlah – od parket přes prkna až po masivní podlahy. Po vybroušení je možné podlahu ošetřit lakem, olejem či voskem podle přání zákazníka. Díky našim zkušenostem dosáhnete nejen krásného vzhledu, ale také prodloužené životnosti podlahy a lepší odolnosti proti každodennímu zatížení.",
+      pvc: {
+        title: "PVC podlahy",
+        text1: "PVC podlahy jsou cenově dostupným a univerzálním řešením pro všechny typy interiérů. Díky široké nabídce vzorů a barev napodobují dřevo, dlažbu i kámen. Jsou odolné vůči vodě a nenáročné na údržbu, což je činí ideální volbou pro kuchyně a koupelny.",
+        titleVyhody: "Výhody PVC podlah:",
+        vyhoda1: "Široká nabídka dekorů za výhodnou cenu.",
+        vyhoda2: "Odolné vůči vlhkosti a snadno se čistí.",
+        vyhoda3: "Příjemný došlap a komfort při chůzi.",
+        vyhoda4: "Vhodné i do prostor s vysokou zátěží.",
         imageProduct: "before-laminat.jpg"
       },
-      cisteni: {
-        title: "Čištění dřevěných podlah",
-        text1: "Chcete, aby vaše dřevěná podlaha zůstala krásná a zdravá co nejdéle? Pravidelné odborné čištění je klíčové pro její dlouhou životnost i zachování původního vzhledu. Naši specialisté používají šetrné, ale účinné prostředky a technologii, která dřevo nepoškodí a zároveň odstraní nečistoty, mastnotu i stopy používání.",
-        text2: "Zajišťujeme profesionální čištění všech typů dřevěných podlah v domácnostech i komerčních prostorách. Podlahu vyčistíme, ošetříme a doporučíme následnou údržbu, aby si zachovala svůj přirozený lesk a byla chráněna proti dalšímu opotřebení. Díky pravidelné péči předejdete nutnosti časté renovace a vaše dřevo bude stále působit reprezentativně a útulně.",
+      koberec: {
+        title: "Koberce",
+        text1: "Koberce přinášejí do interiéru útulnost, teplo a komfort. Jsou k dispozici v mnoha barvách, vzorech a materiálech, což umožňuje vytvořit jedinečný design. Navíc tlumí hluk a poskytují příjemný povrch pro chůzi naboso.",
+        titleVyhody: "Výhody koberců:",
+        vyhoda1: "Měkký a komfortní povrch.",
+        vyhoda2: "Široká nabídka barev, vzorů a typů.",
+        vyhoda3: "Tlumí kročejový hluk a zlepšují akustiku místnosti.",
+        vyhoda4: "Pocit tepla a útulnosti.",
         imageProduct: "before-laminat.jpg"
       },
-      renovace: {
-        title: "Renovace dřevěných podlah",
-        text1: "Má vaše dřevěná podlaha za sebou roky používání a působí unaveně? Renovace je ideálním řešením, jak jí navrátit krásu, odolnost i funkčnost. Naši odborníci zhodnotí stav podlahy a navrhnou postup, který zajistí perfektní výsledek. Každý detail přizpůsobujeme potřebám zákazníka i typu dřeva, aby byla renovace dlouhodobě efektivní.",
-        text2: "Provádíme kompletní renovace dřevěných podlah včetně broušení, tmelení spár, opravy poškozených míst a finální povrchové úpravy lakem, olejem či voskem. Díky naší práci získáte podlahu, která vypadá jako nová a je připravena odolávat každodenní zátěži. Renovací prodloužíte životnost dřeva a navíc dodáte interiéru nový, svěží vzhled.",
-        imageProduct: "before-laminat.jpg"
-      },
-      udrzba: {
-        title: "Renovace dřevěných podlah",
-        text1: "Má vaše dřevěná podlaha za sebou roky používání a působí unaveně? Renovace je ideálním řešením, jak jí navrátit krásu, odolnost i funkčnost. Naši odborníci zhodnotí stav podlahy a navrhnou postup, který zajistí perfektní výsledek. Každý detail přizpůsobujeme potřebám zákazníka i typu dřeva, aby byla renovace dlouhodobě efektivní.",
-        text2: "Provádíme kompletní renovace dřevěných podlah včetně broušení, tmelení spár, opravy poškozených míst a finální povrchové úpravy lakem, olejem či voskem. Díky naší práci získáte podlahu, která vypadá jako nová a je připravena odolávat každodenní zátěži. Renovací prodloužíte životnost dřeva a navíc dodáte interiéru nový, svěží vzhled.",
+      sokl: {
+        title: "Schody a soklové lišty",
+        text1: "Schody a soklové lišty jsou nezbytnou součástí každé podlahy, protože zajišťují estetické zakončení a funkčnost celého interiéru. Soklové lišty zakrývají dilatační spáry a chrání stěny, zatímco schody musí být odolné a bezpečné.",
+        titleVyhody: "Výhody schodů a soklových lišt:",
+        vyhoda1: "Estetické zakončení podlahy.",
+        vyhoda2: "Ochrana stěn proti poškození.",
+        vyhoda3: "Široká nabídka materiálů a barev.",
+        vyhoda4: "Bezpečnostní a funkční řešení pro každý interiér.",
         imageProduct: "before-laminat.jpg"
       }
     };
@@ -178,10 +210,14 @@
         <div class="left">
           <h2>${product.title}</h2>
           <p>${product.text1}</p>
-          <p>${product.text2}</p>
+          <h3>${product.titleVyhody}</h3>
+          <ul>
+            <li>${product.vyhoda1}</li>
+            <li>${product.vyhoda2}</li>
+            <li>${product.vyhoda3}</li>
+            <li>${product.vyhoda4}</li>
         </div>
         <div class="right">
-          <h3>Ukázka produktu</h3>
           <img src="${product.imageProduct}" alt="Detail 1">
         </div>
       `;
