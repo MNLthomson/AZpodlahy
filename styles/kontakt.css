@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#contact {
+  display: flex;
+  flex-direction: rows;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.contact-title h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.contact-location {
+  flex: 1;
+  padding-left: 200px;
+}
+
+.contact-location p, .contact-us p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+iframe, .oteviraci-doba {
+  margin-top: 60px;
+}
+
+.contact-us {
+  flex: 1;
+}
+
+.contact-location h2, .contact-us h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgba(19, 125, 44, 1)
+}
+
+
+/* tabulka */
+.oteviraci-doba {
+  width: 430px;
+  height: 300px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.oteviraci-doba th {
+  background-color: #FF0000;
+  padding: 10px;
+  text-align: left;
+}
+
+.oteviraci-doba td {
+  padding: 8px 15px;
+}
+
+.oteviraci-doba tr:nth-child(odd) td {
+  background-color: #4BA360;
+}
+
+.oteviraci-doba tr:nth-child(even) td {
+  background-color: #2B8624;
+}

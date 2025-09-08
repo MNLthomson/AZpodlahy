@@ -1,0 +1,28 @@
+.reference-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.reference-title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reference-title p {
+  font-size: 16px;
+  color: #313131;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: 275px 275px 275px 275px;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 100px 20px 100px;
+}
+
+.reference-grid img {
+  width: 275px;
+}
