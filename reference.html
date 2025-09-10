@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reference - AZ Pohlahářství</title>
   <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/reference.css"/>
+  <link rel="stylesheet" href="styles/reference.css" />
   <link rel="stylesheet" href="styles/footer.css" />
   <script src="script.js" defer></script>
 
@@ -46,38 +46,27 @@
     </div>
 
   </header>
-    <div class="reference-title">
-      <h2>Reference</h2>
-      <p>Podívejte se na naše práce.</p>
-    </div>
+  <div class="reference-title">
+    <h2>Reference</h2>
+    <p>Podívejte se na naše práce.</p>
+  </div>
 
-    <section id="reference">
-      <div class="reference-grid">
-        <img src="images/reference1.jpg" alt="Reference 1" />
-        <img src="images/reference2.jpg" alt="Reference 2" />
-        <img src="images/reference2.jpg" alt="Reference 3" />
-        <img src="images/reference3.jpg" alt="Reference 4" />
-        <img src="images/reference4.jpg" alt="Reference 5" />
-        <img src="images/reference5.jpg" alt="Reference 6" />
-        <img src="images/reference6.jpg" alt="Reference 7" />
-        <img src="images/reference7.jpg" alt="Reference 8" />
-        <img src="images/reference8.jpg" alt="Reference 9" />
-        <img src="images/reference9.jpg" alt="Reference 10" />
-        <img src="images/reference10.jpg" alt="Reference 11" />
-        <img src="images/reference11.jpg" alt="Reference 12" />
-        <img src="images/reference12.jpg" alt="Reference 1" />
-        <img src="images/reference1.jpg" alt="Reference 2" />
-        <img src="images/reference2.jpg" alt="Reference 3" />
-        <img src="images/reference3.jpg" alt="Reference 4" />
-        <img src="images/reference4.jpg" alt="Reference 5" />
-        <img src="images/reference5.jpg" alt="Reference 6" />
-
-      </div>
-    </section>
- 
-
+  <!-- Grid galerie -->
+  <section class="gallery" aria-label="Galerie referencí">
+    <!-- náhledy -->
+    <a href="images/photo01-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 1">
+      <img src="images/photo01-thumb.jpg" alt="Reference 1">
+    </a>
+    <a href="images/photo02-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 2">
+      <img src="images/photo02-thumb.jpg" alt="Reference 2">
+    </a>
+    <a href="images/photo03-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 3">
+      <img src="images/photo03-thumb.jpg" alt="Reference 3">
+    </a>
+    <!-- ... pokračuj až do photo18 -->
+  </section>
   <main>
-    
+
   </main>
   <footer>
     <div class="footer-grid">
@@ -101,8 +90,15 @@
   </footer>
 
   <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
   <script>
-    
+    const lightbox = GLightbox({
+      selector: '[data-gallery="ref"]',
+      touchNavigation: true,
+      loop: true, // po poslední fotce přejde na první
+      zoomable: true,
+    });
   </script>
 </body>
 

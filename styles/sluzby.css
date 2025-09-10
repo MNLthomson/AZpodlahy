@@ -16,7 +16,7 @@ main {
 /* Sekce služby navigace */
 .service-title {
   text-align: center;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .service-grid {
@@ -77,9 +77,26 @@ main {
 }
 
 .right {
-  flex: 1;
-  margin-left: 20px;
+  text-align: center
 }
+
+.images-real {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.images-real img {
+  flex: 1;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.left {
+  width: 48%;
+}
+
 
 .left h2 {
   font-size: 36px;
