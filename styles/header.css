@@ -93,6 +93,33 @@ header {
   background-color: rgba(239, 239, 239, 1);
 }
 
+.search-results {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 2px;
+  width: 100%;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.result-item:hover {
+  background: #f0f0f0;
+}
+
+.no-results {
+  padding: 8px 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+
 /* Call-to-Action tlačítko */
 .call-button {
   display: inline-block;
