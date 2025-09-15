@@ -87,6 +87,7 @@ const services = {
   }
 };
 
+
 // Funkce pro zobrazení obsahu
 // Funkce pro zobrazení obsahu
 function showService(serviceKey) {
@@ -106,13 +107,14 @@ function showService(serviceKey) {
       </div>
       <div class="right">
         <h3>Realizace</h3>
-        <div class="images-real>
-          <img src="${service.imageBefore.trim()}" alt="Před realizací" title="Před">
-          <img src="${service.imageAfter.trim()}" alt="Po realizaci" title="Po">
+        <div class="images-real">
+          <img src="${service.imageBefore}" alt="Před realizací" title="Před">
+          <img src="${service.imageAfter}" alt="Po realizaci" title="Po">
         </div>"
       </div>
     `;
   }
+  console.log(service.imageAfter)
 }
 
 // Načti defaultně první službu
