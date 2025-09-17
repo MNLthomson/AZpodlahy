@@ -19,7 +19,7 @@ const services = {
     text1: "Rozhodujete se o vaší nové podlaze? Vámi zvolená podlahová krytina, vás bude inspirovat k vytvoření lepšího životního prostředí vašeho domova. Proto ve všech činnostech naší práce se přizpůsobujeme potřebám a přáním každého zákazníka, aby výsledek naší společné práce byl nad očekávání a co nejvyšší možné kvalitě.",
     text2: "Nabízíme široké spektrum podlahovin PVC s vysokou kvalitou od předních světových výrobců v rozmanitosti dřeva, parket, keramické dlažby až po technické a jednobarevné vzory. V naší nabídce najdete PVC heterogenní (složeno z několika vrstev) homogenní) v celé své tloušťce stejného složení i probarvení). Druhy PVC pro lehkou zátěž, určených pro domácnost, byty, rodinné domy až po silné zátěžové PVC , určené pro kanceláře, školy, komerční výstavbu i lehký průmysl. Většina podlahovin je technicky přizpůsobena pro použití na podlahové topení.",
     imageBefore: "/images/pokladka-pvc-realizace-pred.jpg",
-    imageAfter: "/images/pokladka-pvc-realizace-pred.jpg"
+    imageAfter: "/images/pokladka-pvc-realizace-po.jpg"
   },
   marmoleum: {
     title: "Pokládka marmolea",
@@ -46,8 +46,8 @@ const services = {
     title: "Renovace dřevěných podlah",
     text1: "Má vaše dřevěná podlaha za sebou roky používání a působí unaveně? Renovace je ideálním řešením, jak jí navrátit krásu, odolnost i funkčnost. Naši odborníci zhodnotí stav podlahy a navrhnou postup, který zajistí perfektní výsledek. Každý detail přizpůsobujeme potřebám zákazníka i typu dřeva, aby byla renovace dlouhodobě efektivní.",
     text2: "Provádíme kompletní renovace dřevěných podlah včetně broušení, tmelení spár, opravy poškozených míst a finální povrchové úpravy lakem, olejem či voskem. Díky naší práci získáte podlahu, která vypadá jako nová a je připravena odolávat každodenní zátěži. Renovací prodloužíte životnost dřeva a navíc dodáte interiéru nový, svěží vzhled.",
-    imageBefore: "",
-    imageAfter: "after-laminat.jpg"
+    imageBefore: "/images/renovace-teras-realizace-pred.png",
+    imageAfter: "/images/renovace-teras-realizace-po.png"
   },
   udrzba: {
     customHtml: `
@@ -110,7 +110,7 @@ function showService(serviceKey) {
         <div class="images-real">
           <img src="${service.imageBefore}" alt="Před realizací" title="Před">
           <img src="${service.imageAfter}" alt="Po realizaci" title="Po">
-        </div>"
+        </div>
       </div>
     `;
   }

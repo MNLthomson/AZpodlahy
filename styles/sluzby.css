@@ -79,26 +79,9 @@ main {
 
 .right {
   flex: 1;
-  text-align: center
+  text-align: center;
+  width: 40vw;
 }
-
-.images-real {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.images-real img {
-  flex: 1;
-  width: 45%;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-}
-
-.left {
-  width: 48vh;
-}
-
 
 .left h2 {
   font-size: 36px;
@@ -125,7 +108,7 @@ main {
 .right img {
   flex: 1;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
@@ -133,6 +116,7 @@ main {
 .right h3 {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .udrzba-content {
