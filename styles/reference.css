@@ -1,5 +1,6 @@
 .reference-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .reference-title h2 {
@@ -15,47 +16,44 @@
 
 /* Grid galerie */
 /* Používáme responsive grid: počet sloupců se upravuje podle šířky */
-.gallery{
-  display:grid;
-  gap:var(--gap);
-  /* minmax: nejmenší políčko 180px, expanduje rovnoměrně */
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  align-items: start;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sloupce */
+  gap: 30px; /* mezery mezi obrázky */
+  max-width: 1200px; /* volitelně pro zarovnání */
+  margin: 0 auto; /* centrování galerie */
+  margin-bottom: 40px;
 }
 
-/* Každé políčko jako čtverec:
-   - aspect-ratio zajišťuje stejný poměr (1/1) moderně
-   - wrapper .card kontroluje zaoblení a stín
-*/
-.card{
-  background: white;
-  border-radius: var(--card-radius);
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* čtvercové okno pro obrázek */
   overflow: hidden;
-  box-shadow: var(--shadow);
-  display:block;
-  /* zachováme přesnou výšku vůči šířce */
-  aspect-ratio: 1 / 1;
-  position: relative;
+  border-radius: 10px; /* zaoblení rohů */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
-/* Obrázek zabere celé políčko, bez deformace */
-.card img{
-  width:100%;
-  height:100%;
-  object-fit: cover; /* vystřihne/zoomne, aby nebyly pruhy */
-  display:block;
-  transition: transform .35s ease, filter .35s ease;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ořízne a vyplní box */
+  display: block;
 }
 
 /* Drobný hover efekt */
-.card:hover img{
-  transform: scale(1.03);
-  filter: saturate(1.05);
+.card:hover {
+  transform: scale(1.1);
 }
 
-/* Mobil — menší mezera a menší min width */
-@media (max-width:480px){
-  :root{ --gap: 10px; }
-  .gallery{ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
-  .title{ font-size:1.2rem; margin-bottom:12px; }
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }

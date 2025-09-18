@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reference - AZ Pohlahářství</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/reference.css" />
   <link rel="stylesheet" href="styles/footer.css" />
@@ -33,9 +34,9 @@
     </div>
 
     <!-- pravá část -->
-      <div class="header-call">
-        <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
-      </div>
+    <div class="header-call">
+      <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
+    </div>
     </div>
 
   </header>
@@ -47,16 +48,53 @@
   <!-- Grid galerie -->
   <section class="gallery" aria-label="Galerie referencí">
     <!-- náhledy -->
-    <a href="images/photo01-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 1">
-      <img src="images/photo01-thumb.jpg" alt="Reference 1">
+    <a href="images/reference/reference-1.JPG" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-1.JPG" alt="Reference 1">
     </a>
-    <a href="images/photo02-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 2">
-      <img src="images/photo02-thumb.jpg" alt="Reference 2">
+
+    <a href="images/reference/reference-2.JPG" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-2.JPG" alt="Reference 2">
     </a>
-    <a href="images/photo03-large.jpg" class="card" data-gallery="ref" data-glightbox="title: Reference 3">
-      <img src="images/photo03-thumb.jpg" alt="Reference 3">
+
+    <a href="images/reference/reference-3.JPG" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-3.JPG" alt="Reference 3">
     </a>
-    <!-- ... pokračuj až do photo18 -->
+
+    <a href="images/reference/reference-4.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-4.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-5.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-5.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-6.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-6.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-7.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-7.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-8.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-8.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-9.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-9.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-10.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-10.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-11.jpg" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-11.jpg" alt="Reference 3">
+    </a>
+
+    <a href="images/reference/reference-12.JPG" class="card glightbox" data-gallery="galerie">
+      <img src="images/reference/reference-12.JPG" alt="Reference 3">
+    </a>
   </section>
   <main>
 
@@ -84,19 +122,11 @@
 
   <!-- Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
   <script>
     const lightbox = GLightbox({
-      selector: '[data-gallery="ref"]',
-      touchNavigation: true,
-      loop: true, // po poslední fotce přejde na první
-      zoomable: true,
+      selector: '.glightbox'
     });
   </script>
-
-  <script src="sluzby.js"></script>
-  <script src="podlahy.js"></script>
-  <script src="search.js"></script>
 </body>
 
 </html>

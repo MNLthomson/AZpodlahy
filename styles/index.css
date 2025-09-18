@@ -2,8 +2,9 @@ main {
   font-family: 'Arial', sans-serif;
   margin: 0 10vw;
   padding: 0;
-  scroll-behavior: smooth;
 }
+
+
 
 /* Sekce banner */
 #banner {
@@ -26,7 +27,8 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2); /* tmavý filtr */
+  background: rgba(0, 0, 0, 0.2);
+  /* tmavý filtr */
 }
 
 /* Obsah banneru */
@@ -190,11 +192,13 @@ main {
 #partners {
   padding: 0 20px;
 }
+
 #partners h2 {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
 }
+
 .partner-logos {
   display: flex;
   justify-content: center;
@@ -209,5 +213,3 @@ main {
   max-width: 240px;
   height: auto;
 }
-
-
