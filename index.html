@@ -19,6 +19,8 @@
       <div class="header-logo">
         <img src="images/az-podlahy-logo.png" alt="AZ Podlahářství Logo" />
       </div>
+
+      <!-- navigace (desktop) -->
       <div class="header-nav">
         <nav>
           <ul>
@@ -32,13 +34,33 @@
       </div>
     </div>
 
-    <!-- pravá část -->
-      <div class="header-call">
-        <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
-      </div>
+    <!-- pravá část (desktop) -->
+    <div class="header-right">
+      <a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a>
     </div>
 
+    <!-- hamburger/close ikona (jen pro mobily) -->
+    <div class="hamburger">
+      <img src="images/hamburger-menu-icon.png" alt="Menu" id="menu-icon" />
+    </div>
   </header>
+
+  <!-- mobilní menu -->
+  <div class="mobile-menu">
+    <!-- křížek uvnitř menu -->
+    <div class="close-btn">
+      <img src="images/cross-icon.png" alt="Zavřít menu" id="close-icon" />
+    </div>
+    <ul>
+      <li><a href="index.html">O nás</a></li>
+      <li><a href="sluzby.html">Služby</a></li>
+      <li><a href="podlahy.html">Podlahy</a></li>
+      <li><a href="reference.html">Reference</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="tel:+420737003130" class="call-button">Zavolejte na 737 003 130</a></li>
+    </ul>
+  </div>
+
 
   <main>
     <section id="banner">
@@ -48,7 +70,6 @@
         <a href="#about">
           <button class="banner-btn">Zjistit více</button>
         </a>
-
       </div>
     </section>
 
@@ -134,6 +155,7 @@
       <p>© 2025 AZ-PODLAHÁŘSTVÍ</p>
     </div>
   </footer>
+  <script src="hamburger.js"></script>
 </body>
 
 </html>

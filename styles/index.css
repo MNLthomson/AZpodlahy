@@ -213,3 +213,51 @@ main {
   max-width: 240px;
   height: auto;
 }
+
+@media (max-width: 768px) {
+
+  main {
+    margin: 0;
+  }
+  #banner {
+    margin-right: 0;
+    margin-left: 0; 
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .banner-content {
+    width: 90%;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  #about {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-about, .right-about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-about {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .right-about img {
+    width: 100%;
+
+  }
+
+  #typy-sluzeb h1 {
+    margin-bottom: 20px;
+  }
+
+  .service p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
