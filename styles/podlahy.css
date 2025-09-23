@@ -120,4 +120,35 @@ main {
   box-shadow: var(--shadow);
 }
 
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #productContent {
+    padding: 30px;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left p {
+    margin-bottom: 40px;
+  }
+
+  .left ul {
+    text-align: start;
+  }
+
+  .right img {
+    align-items: center;
+  }
+}
+
 

@@ -260,4 +260,12 @@ main {
     margin-right: 0;
     margin-left: 0;
   }
+
+  #partners h2 {
+    margin-bottom: 10px;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
 }

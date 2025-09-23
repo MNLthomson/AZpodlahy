@@ -82,3 +82,24 @@ iframe, .oteviraci-doba {
 .oteviraci-doba tr:nth-child(even) td {
   background-color: #2B8624;
 }
+
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 10px;
+  }
+
+  .contact-location {
+    padding-left: 0;
+  }
+
+  .contact-location iframe {
+    width: 100%;
+  }
+
+  .contact-us .oteviraci-doba {
+    width: 100%;
+    font-size: 20px;
+  }
+}
