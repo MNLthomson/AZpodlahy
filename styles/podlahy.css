@@ -1,18 +1,20 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
 }
 
-body { 
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 100px;
 }
-
 main {
   flex-grow: 1;
 }
+
 
 /* Sekce podlahy navigace */
 .product-title {
@@ -23,10 +25,13 @@ main {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 tlačítka v řádku */
-  gap: 30px; /* mezery mezi tlačítky */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 tlačítka v řádku */
+  gap: 30px;
+  /* mezery mezi tlačítky */
   max-width: 1000px;
-  margin: 20px auto; /* vycentrování na stránce */
+  margin: 20px auto;
+  /* vycentrování na stránce */
   margin-top: 0;
   padding: 10px;
 }
@@ -68,7 +73,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding:  40px 120px;
+  padding: 40px 120px;
   gap: 30px;
   margin-bottom: 20px;
 }
@@ -106,7 +111,7 @@ main {
 .left li {
   font-size: 16px;
   line-height: 1.4;
-  
+
 }
 
 .right {
@@ -120,14 +125,20 @@ main {
   box-shadow: var(--shadow);
 }
 
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .content {
-    flex-direction: column;
-    width: 100vw;
+  .product-button span {
+    padding: 0 8px;
   }
 
   #productContent {
@@ -146,9 +157,11 @@ main {
     text-align: start;
   }
 
+  .right {
+    margin-left: 0;
+  }
+
   .right img {
     align-items: center;
   }
 }
-
-

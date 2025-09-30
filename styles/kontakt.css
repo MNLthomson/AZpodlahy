@@ -4,6 +4,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body {
+  margin-top: 100px;
+}
+
 #contact {
   display: flex;
   flex-direction: rows;
@@ -23,7 +27,7 @@ html, body {
 
 .contact-location {
   flex: 1;
-  padding-left: 200px;
+  padding-left: 10vw;
 }
 
 .contact-location p, .contact-us p {
@@ -100,6 +104,6 @@ iframe, .oteviraci-doba {
 
   .contact-us .oteviraci-doba {
     width: 100%;
-    font-size: 20px;
+    font-size: 19px;
   }
 }
