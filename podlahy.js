@@ -31,7 +31,7 @@
         imageProduct: "/images/podlahy/podlahy-drevene-plovouci.jpg"
       },
       korek: {
-        title: "Korkové plovoucí podlahy",
+        title: "Třívrstvé podlahy",
         text1: "Korkové podlahy jsou vyrobeny z přírodního materiálu, který je příjemný na dotek a šetrný k životnímu prostředí. Korek má přirozené izolační vlastnosti a je velmi komfortní pro chůzi. Díky své pružnosti také tlumí hluk a chrání klouby.",
         titleVyhody: "Výhody korkových podlah:",
         vyhoda1: "Výborné tepelně a zvukově izolační vlastnosti.",

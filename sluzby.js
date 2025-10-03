@@ -22,14 +22,14 @@ const services = {
     imageAfter: "/images/pokladka-pvc-realizace-po.jpg"
   },
   marmoleum: {
-    title: "Pokládka marmolea",
+    title: "Pokládka homogeních podlah",
     text1: "Rozhodujete se pro přírodní a ekologické řešení podlahy? Marmoleum je vysoce odolná krytina z přírodních surovin, která spojuje dlouhou životnost, snadnou údržbu a moderní vzhled. Aby plně vynikly jeho vlastnosti, je nezbytná odborná pokládka. Naši profesionálové dbají na precizní zpracování a vždy se přizpůsobují potřebám zákazníka i charakteru interiéru, aby výsledek působil elegantně a trvale.",
     text2: "Provádíme odbornou pokládku marmolea v rolích i dílcích, a to do domácností, kanceláří, škol i komerčních prostor. Zajišťujeme kompletní servis od přípravy a vyrovnání podkladu, přes přesné lepení až po detailní zakončení hran a lišt. Marmoleum je navíc vhodné i pro podlahové vytápění a díky naší profesionální instalaci získáte podlahu s vysokou odolností a dlouhou životností.",
     imageBefore: "/images/pokladka-marmoleum-realizace-pred.jpg",
     imageAfter: "/images/pokladka-marmoleum-realizace-po.jpg"
   },
   brouseni: {
-    title: "Broušení dřevěných podlah",
+    title: "Renovace dřevěných podlah",
     text1: "Máte dřevěnou podlahu, která ztratila svůj původní vzhled? Profesionální broušení je první krok k její obnově a navrácení přirozené krásy dřeva. Naši odborníci využívají moderní technologii, která zaručí rovnoměrné zbroušení povrchu bez poškození a s minimálním prašným zatížením. Každou zakázku přizpůsobujeme konkrétnímu typu dřeva i míře opotřebení.",
     text2: "Nabízíme kompletní broušení všech typů dřevěných podlah – od parket přes prkna až po masivní podlahy. Po vybroušení je možné podlahu ošetřit lakem, olejem či voskem podle přání zákazníka. Díky našim zkušenostem dosáhnete nejen krásného vzhledu, ale také prodloužené životnosti podlahy a lepší odolnosti proti každodennímu zatížení.",
     imageBefore: "/images/brouseni-podlah-realizace-pred.jpg",
