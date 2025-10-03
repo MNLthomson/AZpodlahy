@@ -35,9 +35,14 @@ body {
   font-size: 20px;
 }
 
+.pobocka-location {
+  width: 32vw;
+}
+
 iframe {
-  width: 400px;
+  width: 100%;
   height: 300px;
+  margin-bottom: 10px;
 }
 
 iframe, .oteviraci-doba {
@@ -53,6 +58,17 @@ iframe, .oteviraci-doba {
   font-weight: 700;
   margin-bottom: 20px;
   color: rgba(19, 125, 44, 1)
+}
+
+.pobocka-gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pobocka-item img{
+  width: 200px;
+  height: 100px;
 }
 
 
@@ -106,4 +122,13 @@ iframe, .oteviraci-doba {
     width: 100%;
     font-size: 19px;
   }
+
+  .pobocka-location {
+    width: 95vw;
+  }
+
+  .pobocka-item img{
+  width: 110px;
+  height: 60px;
+}
 }

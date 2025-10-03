@@ -28,12 +28,12 @@ const services = {
     imageBefore: "/images/pokladka-marmoleum-realizace-pred.jpg",
     imageAfter: "/images/pokladka-marmoleum-realizace-po.jpg"
   },
-  brouseni: {
+  drevo: {
     title: "Renovace dřevěných podlah",
     text1: "Máte dřevěnou podlahu, která ztratila svůj původní vzhled? Profesionální broušení je první krok k její obnově a navrácení přirozené krásy dřeva. Naši odborníci využívají moderní technologii, která zaručí rovnoměrné zbroušení povrchu bez poškození a s minimálním prašným zatížením. Každou zakázku přizpůsobujeme konkrétnímu typu dřeva i míře opotřebení.",
     text2: "Nabízíme kompletní broušení všech typů dřevěných podlah – od parket přes prkna až po masivní podlahy. Po vybroušení je možné podlahu ošetřit lakem, olejem či voskem podle přání zákazníka. Díky našim zkušenostem dosáhnete nejen krásného vzhledu, ale také prodloužené životnosti podlahy a lepší odolnosti proti každodennímu zatížení.",
-    imageBefore: "/images/brouseni-podlah-realizace-pred.jpg",
-    imageAfter: "/images/brouseni-podlah-realizace-po.jpg"
+    imageBefore: "/images/renovace-drevo-realizace-pred.JPG",
+    imageAfter: "/images/renovace-drevo-realizace-po.JPG"
   },
   cisteni: {
     title: "Čištění dřevěných podlah",
@@ -43,9 +43,9 @@ const services = {
     imageAfter: "/images/cisteni-podlah-realizace-po.jpg"
   },
   renovace: {
-    title: "Renovace dřevěných podlah",
-    text1: "Má vaše dřevěná podlaha za sebou roky používání a působí unaveně? Renovace je ideálním řešením, jak jí navrátit krásu, odolnost i funkčnost. Naši odborníci zhodnotí stav podlahy a navrhnou postup, který zajistí perfektní výsledek. Každý detail přizpůsobujeme potřebám zákazníka i typu dřeva, aby byla renovace dlouhodobě efektivní.",
-    text2: "Provádíme kompletní renovace dřevěných podlah včetně broušení, tmelení spár, opravy poškozených míst a finální povrchové úpravy lakem, olejem či voskem. Díky naší práci získáte podlahu, která vypadá jako nová a je připravena odolávat každodenní zátěži. Renovací prodloužíte životnost dřeva a navíc dodáte interiéru nový, svěží vzhled.",
+    title: "Renovace dřevěných teras",
+    text1: "Vaše terasa je místem odpočinku a pohody, ale vlivem počasí a používání může časem ztrácet svůj původní vzhled. Renovace dřevěné terasy je ideálním způsobem, jak navrátit povrchu krásu, ochranu a prodloužit jeho životnost. Naši odborníci posoudí stav dřeva a zvolí nejvhodnější postup, aby terasa znovu působila jako nová a odolala náročným venkovním podmínkám.",
+    text2: "Provádíme kompletní renovaci dřevěných teras – od čištění a broušení, přes ošetření spár a opravy poškozených částí, až po finální nátěr olejem nebo ochranným prostředkem proti povětrnostním vlivům. Díky našemu profesionálnímu přístupu bude vaše terasa chráněná, esteticky atraktivní a připravená sloužit po mnoho dalších let.",
     imageBefore: "/images/renovace-teras-realizace-pred.png",
     imageAfter: "/images/renovace-teras-realizace-po.png"
   },

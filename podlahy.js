@@ -30,15 +30,15 @@
         vyhoda4: "Přírodní a ekologický materiál.",
         imageProduct: "/images/podlahy/podlahy-drevene-plovouci.jpg"
       },
-      korek: {
+      trivrstve: {
         title: "Třívrstvé podlahy",
-        text1: "Korkové podlahy jsou vyrobeny z přírodního materiálu, který je příjemný na dotek a šetrný k životnímu prostředí. Korek má přirozené izolační vlastnosti a je velmi komfortní pro chůzi. Díky své pružnosti také tlumí hluk a chrání klouby.",
-        titleVyhody: "Výhody korkových podlah:",
-        vyhoda1: "Výborné tepelně a zvukově izolační vlastnosti.",
-        vyhoda2: "Přírodní, ekologický a recyklovatelný materiál.",
-        vyhoda3: "Měkký a příjemný povrch vhodný i pro chůzi naboso.",
-        vyhoda4: "Tlumí kročejový hluk a šetří klouby.",
-        imageProduct: "/images/podlahy/podlahy-korkove.png"
+        text1: "Třívrstvé podlahy patří mezi oblíbené dřevěné krytiny, které kombinují krásu přírodního dřeva s vysokou stabilitou. Jsou tvořeny třemi vrstvami – nášlapná vrstva je z pravého dřeva, střední a spodní vrstva zajišťují pevnost a odolnost proti kroucení. Díky této konstrukci si podlaha uchovává svůj přirozený vzhled a je méně náchylná na změny vlhkosti a teploty.",
+        titleVyhody: "Výhody třívrstvých podlah:",
+        vyhoda1: "Přírodní vzhled a možnost výběru z různých dřevin.",
+        vyhoda2: "Vysoká rozměrová stabilita díky vrstvené konstrukci.",
+        vyhoda3: "Možnost renovace přebroušením.",
+        vyhoda4: "Vhodné i pro podlahové vytápění.",
+        imageProduct: "/images/podlahy/trivrstve-podlahy.jpg"
       },
       marmoleum: {
         title: "Marmoleum - Přírodní linoleum",

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt - AZ Pohlahářství</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/kontakt.css" />
   <link rel="stylesheet" href="styles/footer.css" />
@@ -75,10 +76,25 @@
         <p>Pardubická 757</p>
         <p>500 04 Hradec Králové</p>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.7198772726238!2d15.790608912159263!3d50.2037668049763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c2b0d0081b72b%3A0x7f502db32be2b965!2sA-z%20Podlahy!5e0!3m2!1scs!2scz!4v1757333921679!5m2!1scs!2scz"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="pobocka-location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.7198772726238!2d15.790608912159263!3d50.2037668049763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c2b0d0081b72b%3A0x7f502db32be2b965!2sA-z%20Podlahy!5e0!3m2!1scs!2scz!4v1757333921679!5m2!1scs!2scz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="pobocka-gallery">
+            <a href="images/pobocka1.jpg" class="pobocka-item glightbox" data-gallery="pobocka">
+              <img src="images/pobocka1.jpg" alt="pobočka 1">
+            </a>
+            <a href="images/pobocka2.jpg" class="pobocka-item glightbox" data-gallery="pobocka">
+              <img src="images/pobocka2.jpg" alt="pobočka 2">
+            </a>
+            <a href="images/pobocka3.jpg" class="pobocka-item glightbox" data-gallery="pobocka">
+              <img src="images/pobocka3.jpg" alt="pobočka 3">
+            </a>
+          </div>
+        </div>
+
       </div>
       <div class="contact-us">
         <h2>Kontaktujte nás</h2>
@@ -109,6 +125,10 @@
             <td>Pátek</td>
             <td>10 - 12 hod. 13 - 16 hod.</td>
           </tr>
+          <tr>
+            <td>So - Ne</td>
+            <td>po domluvě</td>
+          </tr>
         </table>
       </div>
     </section>
@@ -136,6 +156,12 @@
   </footer>
 
   <script src="hamburger.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
 </body>
 
 </html>
