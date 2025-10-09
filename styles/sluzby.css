@@ -170,6 +170,12 @@ main {
     flex-direction: row;
   }
 
+  .images-real img{
+    
+    height: 100px;
+    width: auto;
+  }
+
   .udrzba-content {
     margin-left: 0;
   }
