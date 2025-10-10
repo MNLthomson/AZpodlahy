@@ -151,7 +151,7 @@ main {
   }
 
   .left {
-    text-align: center;
+    align-items: center;
   }
 
   .left p {
