@@ -66,6 +66,11 @@ iframe, .oteviraci-doba {
   width: 100%;
 }
 
+.contact-call, .contact-mail {
+  text-decoration: none;
+  color: black;
+}
+
 .pobocka-item img{
   width: 200px;
   height: 100px;
