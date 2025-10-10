@@ -217,7 +217,6 @@ main {
   }
 
   .left h2{
-    text-align: center;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -227,7 +226,6 @@ main {
   }
 
   .left p{
-    text-align: center;
     padding: 0;
   }
 
