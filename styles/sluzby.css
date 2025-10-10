@@ -61,7 +61,7 @@ main {
   font-weight: 600;
   text-align: left;/*  */
   padding: 5px 20px;
-  color: black;
+  color: black !important;
 }
 
 .service-button:hover {
@@ -202,7 +202,9 @@ main {
     padding: 0 8px;
   }
 
-  
+  .udrzba-content h2 {
+    font-size: 26px;
+  }
 
   #serviceContent {
     padding: 30px;
@@ -211,6 +213,7 @@ main {
   .left {
     padding: 0;
     margin: 0;
+    align-items: center;
   }
 
   .left h2{
