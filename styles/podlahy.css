@@ -154,6 +154,10 @@ main {
     align-items: center;
   }
 
+  .left h2 {
+    text-align: center;
+  }
+  
   .left p {
     margin-bottom: 40px;
   }
