@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -55,7 +59,7 @@ main {
   flex-grow: 1;
   font-size: 14px;
   font-weight: 600;
-  text-align: left;
+  text-align: left;/*  */
   padding: 5px 20px;
   color: black;
 }
@@ -63,6 +67,12 @@ main {
 .service-button:hover {
   background: #e0e0e0;
   transform: translateY(-2px);
+}
+
+.service-button:focus,
+.service-button:active {
+  color: black; /* drží barvu i při kliknutí */
+  outline: none;
 }
 
 .content {
