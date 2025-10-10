@@ -154,10 +154,11 @@ main {
     align-items: center;
   }
 
-  .left h2 {
+  #productContent .left h2 {
     text-align: center;
+    font-size: 28px;
   }
-  
+
   .left p {
     margin-bottom: 40px;
   }
