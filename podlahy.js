@@ -40,15 +40,15 @@
         vyhoda4: "Vhodné i pro podlahové vytápění.",
         imageProduct: "/images/podlahy/trivrstve-podlahy.jpg"
       },
-      marmoleum: {
-        title: "Marmoleum - Přírodní linoleum",
-        text1: "Marmoleum je přírodní podlaha vyrobená z obnovitelných surovin, jako je lněný olej, juta a pryskyřice. Je ekologická, zdravotně nezávadná a zároveň velmi odolná. Skvěle se hodí do domácností i veřejných prostor díky své trvanlivosti a antistatickým vlastnostem.",
-        titleVyhody: "Výhody marmolea:",
-        vyhoda1: "100% přírodní a ekologická podlaha.",
-        vyhoda2: "Velmi dlouhá životnost a vysoká odolnost.",
-        vyhoda3: "Antistatické a antibakteriální vlastnosti.",
-        vyhoda4: "Snadná údržba a moderní design.",
-        imageProduct: "/images/podlahy/podlahy-marmoleum.png"
+      homogen: {
+        title: "Homogenní PVC",
+        text1: "Homogenní PVC podlahy jsou tvořeny jednou vrstvou materiálu po celé své tloušťce, což zaručuje mimořádnou odolnost a dlouhou životnost. Jsou ideální pro prostory s vysokou zátěží, jako jsou školy, nemocnice, kanceláře nebo komerční prostory. Díky své struktuře se snadno čistí a udržují, zároveň si zachovávají stálý vzhled i po mnoha letech používání.",
+        titleVyhody: "Výhody homogenních PVC podlah:",
+        vyhoda1: "Vysoká odolnost vůči opotřebení a poškození.",
+        vyhoda2: "Jednoduchá údržba a snadné čištění.",
+        vyhoda3: "Dlouhá životnost i při intenzivním používání.",
+        vyhoda4: "Hygienické a vhodné pro veřejné i zdravotnické prostory.",
+        imageProduct: "/images/podlahy/homogeni-pvc.png"
       },
       pvc: {
         title: "PVC podlahy",
