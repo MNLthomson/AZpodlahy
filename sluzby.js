@@ -21,10 +21,10 @@ const services = {
     imageBefore: "/images/pokladka-pvc-realizace-pred.jpg",
     imageAfter: "/images/pokladka-pvc-realizace-po.jpg"
   },
-  marmoleum: {
-    title: "Pokládka homogeních podlah",
-    text1: "Rozhodujete se pro přírodní a ekologické řešení podlahy? Marmoleum je vysoce odolná krytina z přírodních surovin, která spojuje dlouhou životnost, snadnou údržbu a moderní vzhled. Aby plně vynikly jeho vlastnosti, je nezbytná odborná pokládka. Naši profesionálové dbají na precizní zpracování a vždy se přizpůsobují potřebám zákazníka i charakteru interiéru, aby výsledek působil elegantně a trvale.",
-    text2: "Provádíme odbornou pokládku marmolea v rolích i dílcích, a to do domácností, kanceláří, škol i komerčních prostor. Zajišťujeme kompletní servis od přípravy a vyrovnání podkladu, přes přesné lepení až po detailní zakončení hran a lišt. Marmoleum je navíc vhodné i pro podlahové vytápění a díky naší profesionální instalaci získáte podlahu s vysokou odolností a dlouhou životností.",
+  homogen: {
+    title: "Pokládka homogenních podlah",
+    text1: "Homogenní podlahy jsou oblíbeným řešením pro prostory s vysokými nároky na odolnost, čistotu a dlouhou životnost. Díky své jednolité struktuře poskytují výbornou mechanickou i chemickou odolnost, snadno se udržují a zachovávají si atraktivní vzhled po mnoho let. Jsou ideální volbou do nemocnic, škol, kanceláří, obchodních i výrobních prostor, ale také do domácností, kde se klade důraz na praktičnost a moderní design.",
+    text2: "Provádíme kompletní pokládku homogenních podlah včetně přípravy podkladu, přesného lepení a finálního začištění detailů. Naši zkušení podlaháři dbají na precizní provedení, které zaručuje rovný, pevný a esteticky čistý povrch. Díky profesionální instalaci získáte podlahu s dlouhou životností, vysokou odolností a bezproblémovou údržbou.",
     imageBefore: "/images/pokladka-marmoleum-realizace-pred.jpg",
     imageAfter: "/images/pokladka-marmoleum-realizace-po.jpg"
   },
