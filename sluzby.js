@@ -49,40 +49,26 @@ const services = {
     imageBefore: "/images/renovace-teras-realizace-pred.png",
     imageAfter: "/images/renovace-teras-realizace-po.png"
   },
-  udrzba: {
+  dvere: {
     customHtml: `
-          <div class="udrzba-content">
-            <h2>ÚDRŽBA PODLAH? NÁVODY NA ÚDRŽBU.</h2>
-            <h3>Jak na údržbu podlahy?</h3>
-            <p><strong>Váš jednoduchý návod na ošetřování a čištění podlah:</strong> Špatné čističe a ošetřovací produkty nebo postupy mohou Vaši podlahu poškodit nebo trvale zničit...</p>
-            
-            <h3>Potřebuje podlaha speciální ošetřování?</h3>
-            <p>Myslíte si, že ošetřovat či čistit podlahovou krytinu je zbytečné? ...</p>
-
-            <h3>Jak ošetřovat podlahu</h3>
-            <p>Menší podlahu je byste si podle návodu dokážete ošetřit sami...</p>
-
-            <h3>Čištění podlahy po ukončení pokládky</h3>
-            <p>Po ukončení pokládky a stavebních prací se povrch podlahy čistí od výrobních a montážních nečistot...</p>
-
-            <h3>Běžné denní čištění a údržba podlahy</h3>
-            <p>Běžné šamponky nebo příliš agresivní prostředky dokážou rychle znehodnotit ochranný film...</p>
-
-            <h3>Základní čištění</h3>
-            <p>Při základním čištění se používají účinnější produkty...</p>
-
-            <h3>Potřebuje vaše podlaha renovaci?</h3>
-            <p>Při výrazné podlaze speciální renovace...</p>
-
-            <h3>5 dobrých rad k ošetřování a čištění podlahy</h3>
-            <ul>
-              <li>Vždy používejte doporučené čističe a prostředky k údržbě dané podlahy.</li>
-              <li>Nečistoty odstraňujte pravidelně, aby se nezaryly hluboko do povrchu.</li>
-              <li>Při větším znečištění využijte profesionální úklidové služby.</li>
-              <li>Podlahu pravidelně kontrolujte a zabraňte jejímu mechanickému poškození.</li>
-              <li>Nikdy nepoužívejte agresivní chemické prostředky.</li>
-            </ul>
-          </div>
+          <div class="left">
+        <h2>Prodej a montáž dveří</h2>
+        <p>Naše firma AZ Podlahářství – od A do Z zastupuje renomovaného polského výrobce POL-SKONE, který se specializuje na interiérové a vchodové dveře, obložkové zárubně a okna.</p>
+        <p>Zajišťujeme prodej, zaměření i odbornou montáž po celé České republice.</p>
+        <ul>
+          <li>Široký výběr moderních i klasických dekorů</li>
+          <li>Kvalitní materiály a precizní zpracování</li>
+          <li>Profesionální přístup a kompletní servis</li>
+          <li>Dveře, obložky i okna přesně na míru</li>
+        </ul>
+      </div>
+      <div class="right">
+        <h3>Realizace</h3>
+        <div class="images-real">
+          <img src="/images/montaz-dveri-pred.jpeg" alt="Před realizací" title="Před">
+          <img src="/images/montaz-dveri.jpeg" alt="Po realizaci" title="Po">
+        </div>
+      </div>
         `
   }
 };
