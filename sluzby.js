@@ -65,8 +65,12 @@ const services = {
       <div class="right">
         <h3>Realizace</h3>
         <div class="images-real">
+        <a href="/images/montaz-dveri-pred.jpeg" class="glightbox" data-gallery="services">
           <img src="/images/montaz-dveri-pred.jpeg" alt="Před realizací" title="Před">
+        </a>
+        <a href="/images/montaz-dveri.jpeg" class="glightbox" data-gallery="services">
           <img src="/images/montaz-dveri.jpeg" alt="Po realizaci" title="Po">
+        </a>
         </div>
       </div>
         `
@@ -94,8 +98,12 @@ function showService(serviceKey) {
       <div class="right">
         <h3>Realizace</h3>
         <div class="images-real">
+        <a href="${service.imageBefore}" class="glightbox" data-gallery="services">
           <img src="${service.imageBefore}" alt="Před realizací" title="Před">
+        </a>
+        <a href="${service.imageAfter}" class="glightbox" data-gallery="services">
           <img src="${service.imageAfter}" alt="Po realizaci" title="Po">
+        </a>
         </div>
       </div>
     `;
