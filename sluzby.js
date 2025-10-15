@@ -1,3 +1,5 @@
+
+
 // Data pro každou službu
 const services = {
   podlahy: {
@@ -77,12 +79,29 @@ const services = {
   }
 };
 
+// Deklarace globální proměnné, kterou lze z funkce showService přepsat.
+let lightbox = null;
+
+// Prvotní inicializace (spouští se při načtení stránky)
+document.addEventListener('DOMContentLoaded', () => {
+  lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+  // Volání showService('podlahy');
+});
+
 
 // Funkce pro zobrazení obsahu
 // Funkce pro zobrazení obsahu
 function showService(serviceKey) {
   const service = services[serviceKey];
   const contentDiv = document.getElementById("serviceContent");
+  let newHtml;
+
+  // KROK 1: Zničení staré GLightbox instance (pokud existuje)
+  if (lightbox && typeof lightbox.destroy === 'function') {
+    lightbox.destroy(); // Zruší navázání Lightboxu na staré HTML prvky
+  }
 
   if (service.customHtml) {
     // Speciální obsah (údržba)
@@ -108,7 +127,16 @@ function showService(serviceKey) {
       </div>
     `;
   }
-  console.log(service.imageAfter)
+
+  // KROK 2: Vytvoření nové GLightbox instance pro nový obsah
+    // Přeuložíme novou instanci do globální proměnné 'lightbox'
+    if (typeof GLightbox === 'function') {
+        lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    }
+
+
 }
 
 // Načti defaultně první službu
